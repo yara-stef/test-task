@@ -147,3 +147,31 @@ p {
     font-size: 20.8px;
     line-height: 25px;
 }
+
+@media screen and (max-width: 396px) {
+    .bookmark-img {
+        display: none;
+    }
+
+    section {
+        width: 396px;
+        height: 206px;
+        margin-left: 9px;
+        margin-right: 9px;
+        background-color: rgba(202, 222, 223, 0.274);
+        border: solid;
+        border-width: 2px;
+        border-color: rgba(202, 222, 223, 0.274);
+        box-shadow: 5px 10px rgba(202, 222, 223, 0.274);
+    }
+
+    .title {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .job-address {
+        display: grid;
+        grid-template-rows: auto auto auto auto;
+    }
+}
