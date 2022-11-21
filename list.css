@@ -153,8 +153,13 @@ p {
         display: none;
     }
 
+    #first {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
     section {
-        width: 396px;
+        max-width: 396px;
         height: 206px;
         margin-left: 9px;
         margin-right: 9px;
@@ -163,6 +168,49 @@ p {
         border-width: 2px;
         border-color: rgba(202, 222, 223, 0.274);
         box-shadow: 5px 10px rgba(202, 222, 223, 0.274);
+        display: grid;
+        justify-content: center;
+    }
+
+    h3 {
+        width: 278px;
+        height: 48px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .name {
+        width: 279px;
+        height: 50px;
+        margin-top: 0;
+            margin-bottom: 0;
+    }
+
+    .address {
+        width: 137px;
+        height: 25px;
+        margin-top: 0;
+            margin-bottom: 0;
+    }
+
+    .title {
+        width: 66px;
+        height: 66px;
+    }
+
+    .rating {
+        width: 54px;
+        height: 10px;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .bookmark-with-rating {
+        width: 125px;
+        height: 17px;
     }
 
     .title {
