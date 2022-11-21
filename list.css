@@ -174,4 +174,15 @@ p {
         display: grid;
         grid-template-rows: auto auto auto auto;
     }
+
+    .rating { grid-area: rating;}
+    .bookmark-with-rating {grid-area: bookmark-rating;}
+    .title {grid-area: title;}
+
+    .grid-container-rating {
+        display: grid;
+        grid-template-areas: 
+        'rating bookmark-rating'
+        'title title';
+    }
 }
