@@ -149,6 +149,10 @@ p {
 }
 
 @media screen and (max-width: 396px) {
+    body {
+        width: 396px;
+    }
+
     .bookmark-img {
         display: none;
     }
@@ -172,7 +176,7 @@ p {
         justify-content: center;
     }
 
-    h3 {
+    h3 a {
         width: 278px;
         height: 48px;
         font-weight: 400;
@@ -181,6 +185,8 @@ p {
         margin-top: 0;
         margin-bottom: 0;
     }
+
+    
 
     .name {
         width: 279px;
@@ -213,7 +219,7 @@ p {
         height: 17px;
     }
 
-    .title {
+    /*.title {
         display: grid;
         grid-template-columns: auto auto;
     }
@@ -221,16 +227,28 @@ p {
     .job-address {
         display: grid;
         grid-template-rows: auto auto auto auto;
-    }
+    }*/
 
     .rating { grid-area: rating;}
     .bookmark-with-rating {grid-area: bookmark-rating;}
     .title {grid-area: title;}
+    .bookmark {grid-area: bookmark;}
 
     .grid-container-rating {
         display: grid;
         grid-template-areas: 
         'rating bookmark-rating'
+        'title title'
+        'title title'
+        'title title';
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-areas: 
+        'bookmark bookmark'
+        'title title'
+        'title title'
         'title title';
     }
 }
